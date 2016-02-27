@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://code.getmdl.io/1.1.1/material.red-orange.min.css" />
+        <script async type="text/javascript" src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+        <meta content="chrome=1" http-equiv="X-UA-Compatible">
+        <meta name="apple-mobile-web-app-title" content="1511/2">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="PDF-uri pentru 1511/2">
+        <title>1511/2</title>
+        <style>
+            body{
+            font-family:Roboto;}
+            .underline{text-decoration: underline;}
+            a{
+            text-decoration:none;}
+            .mdl-layout__content{
+            flex-shrink:0;}
+            #middlecol{margin:0 auto;text-align:center;}
+            .mdl-layout__header{margin-bottom:16px;}
+            .an{padding:30px 20px 30px 20px;width:auto;height:auto;}
+            footer{margin-top:24px;}
+        </style>
+    </head>
+    <body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll mdl-shadow--2dp">
+        <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title"><a href="index.html" style="color:#FFF;">Robotica 1511/2</a></span>
+        </div>
+    </header>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--1-col mdl-cell--6-col-tablet"></div>
+                <div class="mdl-cell mdl-cell--2-col"></div>
+                <div class="mdl-cell mdl-cell--6-col" id="middlecol">
+                    <div class="mdl-color-text--primary mdl-typography--display-4">An</div>
+                    <button class="mdl-button mdl-js-button mdl-button--primary an" onclick="hideDiv('sem','a1')">
+                    <span class="mdl-typography--display-4">1</span>
+                    </button>
+                    <button class="mdl-button mdl-js-button mdl-button--primary an">
+                    <span class="mdl-typography--display-4">2</span>
+                    </button>
+                    <br />
+                    <div id="sem" style="display:none;">
+                        <div class="mdl-typography--display-4 mdl-color-text--accent">Sem</div>
+                        <a id="sem1link" href="">
+                            <button class="mdl-button mdl-js-button mdl-button--accent an">
+                                <span class="mdl-typography--display-4">
+                                    1
+                                </span>
+                            </button>
+                        </a>
+                        <a id="sem2link" href="">
+                            <button class="mdl-button mdl-js-button mdl-button--accent an">
+                                <span class="mdl-typography--display-4">
+                                    2
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                    <button class="mdl-button mdl-js-button mdl-button--primary an">
+                    <span class="mdl-typography--display-4">3</span>
+                    </button>
+                    <button class="mdl-button mdl-js-button mdl-button--primary an">
+                    <span class="mdl-typography--display-4">4</span>
+                    </button>
+                    <br />
+                </div>
+                <div class="mdl-cell mdl-cell--1-col mdl-cell--6-col-tablet"></div>
+                <div class="mdl-cell mdl-cell--2-col"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer--left-section">
+            <div class="mdl-logo">
+                <span style="white-space: nowrap">Website by <a href="https://github.com/raulpetru">Petru Octavian Raul</a>.</span>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script>
+    function hideDiv(id,ansem) {
+    if(document.getElementById(id).style.display == "none"){document.getElementById(id).style.display = "block";}
+    else{document.getElementById(id).style.display = "none";}
+    if (ansem == "a1") {document.getElementById('sem1link').href= "files/an1/sem1/an1sem1.html";document.getElementById('sem2link').href= "files/an1/sem2/an1sem2.html";}
+    }
+    </script>
+    </body>
+</html>
