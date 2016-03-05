@@ -13,20 +13,19 @@
         <meta name="description" content="PDF-uri pentru 1511/2">
         <title>1511/2</title>
         <style>
-            body{
-            font-family:Roboto;}
+            body{margin:0;padding:0;height:100%;font-family:Roboto;}
             .underline{text-decoration: underline;}
-            a{
-            text-decoration:none;}
-            .mdl-layout__content{
-            flex-shrink:0;}
+            a{text-decoration:none;}
+            .mdl-layout__content{flex-shrink:0;}
             #middlecol{background-color:white; padding: 16px;margin:0 auto;}
             .mdl-layout__header{margin-bottom:16px;}
-            footer{margin-top:24px;}
+            footer{position:absolute;bottom:0;right:0;left:0;}
+            #wrapper{min-height:100%;position:relative;}
+            .page-content{display:block;padding-bottom:120px;}
         </style>
     </head>
     <body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div id="wrapper" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header mdl-layout__header--scroll mdl-shadow--2dp">
         <div class="mdl-layout__header-row">
         <span class="mdl-layout-title"><a href="../../../index.html" style="color:#FFF;">Robotica 1511/2</a></span>
@@ -120,14 +119,14 @@
                 <div class="mdl-cell mdl-cell--2-col"></div>
             </div>
         </div>
-    </main>
-    <footer class="mdl-mini-footer">
-        <div class="mdl-mini-footer--left-section">
-            <div class="mdl-logo">
-                <span style="white-space: nowrap">Website by <a href="https://github.com/raulpetru">Petru Octavian Raul</a>.</span>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer--left-section">
+                <div class="mdl-logo">
+                    <span style="white-space: nowrap">Website by <a href="https://github.com/raulpetru">Petru Octavian Raul</a>.</span>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
     </div>
     </body>
 </html>
