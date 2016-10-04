@@ -29,7 +29,7 @@
     <div id="wrapper" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header mdl-layout__header--scroll mdl-shadow--2dp">
         <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title"><a href="index.html" style="color:#FFF;">Robotica 1511/2</a></span>
+        <span class="mdl-layout-title"><a href="index.html" style="color:#FFF;">Robotica</a></span>
         <div class="mdl-layout-spacer"></div>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="https://raulpetru.stackstorage.com/index.php/s/CwwZr191YDjf5vy">Upload</a>
@@ -46,7 +46,7 @@
                     <button class="mdl-button mdl-js-button mdl-button--primary an" onclick="hideDiv('sem','a1')">
                     <span class="mdl-typography--display-4">1</span>
                     </button>
-                    <button class="mdl-button mdl-js-button mdl-button--primary an">
+                    <button class="mdl-button mdl-js-button mdl-button--primary an"  onclick="hideDiv('sem','a2')">
                     <span class="mdl-typography--display-4">2</span>
                     </button>
                     <br />
@@ -93,6 +93,7 @@
     if(document.getElementById(id).style.display == "none"){document.getElementById(id).style.display = "block";}
     else{document.getElementById(id).style.display = "none";}
     if (ansem == "a1") {document.getElementById('sem1link').href= "files/an1/sem1/an1sem1.html";document.getElementById('sem2link').href= "files/an1/sem2/an1sem2.html";}
+    if (ansem == "a2") {document.getElementById('sem1link').href= "files/an2/sem1/an2sem1.html";document.getElementById('sem2link').href= "";}
     }
     </script>
     </body>
